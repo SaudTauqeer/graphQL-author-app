@@ -8,5 +8,5 @@ const graphqlHTTP = require('express-graphql');
 app.use('/graphql', graphqlHTTP({}));
 
 app.listen(port, () => {
-	console.log(`Node + GraphQL server is running.`);
+	console.log(`Node + GraphQL server is running at http://localhost:${port}`);
 });
