@@ -2,7 +2,7 @@
 import express from 'express';
 const app = express();
 const port = 4000;
-import * as graphqlHTTP from 'express-graphql';
+const graphqlHTTP = require('express-graphql');
 
 //graphql-express middleware
 //app.use('/graphql');
