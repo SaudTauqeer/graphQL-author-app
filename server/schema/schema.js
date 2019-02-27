@@ -42,7 +42,6 @@ const AuthorType = new GraphQLObjectType({
 		book: {
 			type: new GraphQLList(BookType),
 			resolve(parent, args) {
-				console.log(parent);
 				return books.filter((book) => parent.id === book.authorId);
 			}
 		}
