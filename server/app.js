@@ -16,9 +16,11 @@ app.use(
 	'/graphql',
 	graphqlHTTP({
 		schema,
-		graphiql: true
+		graphiql: false
 	})
 );
+
+app.use(express.static('../client/build'));
 
 app.listen(port, () => {
 	console.log(`Node + GraphQL server is running at http://localhost:${port}`);
