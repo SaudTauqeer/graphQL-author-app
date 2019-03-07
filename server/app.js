@@ -20,7 +20,7 @@ app.use(
 	})
 );
 
-app.use(express.static('./client/build'));
+app.use(express.static('../client/build'));
 
 app.listen(port, () => {
 	console.log(`Node + GraphQL server is running at http://localhost:${port}`);
